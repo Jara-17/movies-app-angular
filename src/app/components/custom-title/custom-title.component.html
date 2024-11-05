@@ -1,0 +1,25 @@
+@switch (headingLevel) {
+@case(1) {
+<h1 class="title title-1">{{text}}</h1>
+}
+
+@case(2) {
+<h2 class="title title-2">{{text}}</h2>
+}
+
+@case(3) {
+<h3 class="title title-3">{{text}}</h3>
+}
+
+@case (4) {
+<h4 class="title title-4">{{text}}</h4>
+}
+
+@case (5) {
+<h5 class="title title-5">{{text}}</h5>
+}
+
+@default {
+<h6 class="title title-6">{{text}}</h6>
+}
+}

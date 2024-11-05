@@ -1,0 +1,14 @@
+<layout>
+  <section class="px-8 py-10">
+    <custom-title [headingLevel]="1" text="My List" />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      @for (movie of favoritesMovies; track $index) {
+      <movie-card [movie]="movie" />
+      } @empty {
+      <div class="text-center col-span-full">
+        <custom-title [headingLevel]="1" text="No movies in your list yet." />
+      </div>
+      }
+    </div>
+  </section>
+</layout>

@@ -1,0 +1,23 @@
+.title {
+  @apply dark:text-white mb-4;
+}
+
+.title-1 {
+  @apply text-5xl font-extrabold;
+}
+
+.title-2 {
+  @apply text-4xl font-bold;
+}
+
+.title-3 {
+  @apply text-3xl font-semibold;
+}
+
+.title-4 {
+  @apply text-xl font-semibold hover:text-blue-700 transition-colors duration-200;
+}
+
+.title-5 {
+  @apply text-sm font-semibold;
+}

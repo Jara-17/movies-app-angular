@@ -1,0 +1,18 @@
+<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+  @if (isSearch) {
+  <custom-title [headingLevel]="1" text="Search Results" />
+  } @else {
+  <custom-title [headingLevel]="1" text="Popular Movies" />
+  }
+  <pagination [currentPage]="page" [totalPages]="totalPages" (goToNextPage)="goToNextPage()"
+    (goToPage)="goToPage($event)" (goToPreviousPage)="goToPreviousPage()" />
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  @for (movie of movies; track $index) {
+  <movie-card [movie]="movie" />
+  }
+</div>
+
+<pagination [currentPage]="page" [totalPages]="totalPages" (goToNextPage)="goToNextPage()" (goToPage)="goToPage($event)"
+  (goToPreviousPage)="goToPreviousPage()" />

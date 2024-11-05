@@ -1,0 +1,26 @@
+<layout>
+  <section class="p-10 flex flex-col md:flex-row items-center justify-center gap-8">
+    <div class="overflow-hidden object-cover object-center md:w-1/4">
+      <img class="rounded-lg" [src]="getImageUrl(movie.poster_path, 'w780')" alt="">
+    </div>
+
+    <div class="md:w-2/4">
+      <custom-title [headingLevel]="1" [text]="movie.title" />
+      <p class="text-sm text-gray-700 dark:text-gray-400">{{ movie.overview }}</p>
+      <div class="flex flex-wrap items-center gap-4 my-2">
+        @for (genre of movie.genres; track $index) {
+        <span
+          class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">{{
+          genre.name }}</span>
+        }
+      </div>
+
+      <div class="flex items-center gap-4">
+        <span class="text-sm text-gray-600 dark:text-gray-300">
+          <span class="font-semibold">Fecha de Estreno: {{ movie.release_date | date: 'MMM dd, yyyy' }}</span> -
+          <span class="font-semibold">Duración: {{ movie.runtime }} minutes</span>
+        </span>
+      </div>
+    </div>
+  </section>
+</layout>
