@@ -78,8 +78,6 @@ O visita la página de [Descripción general y referencia de comandos de Angular
 
 Asegúrate de utilizar las variables de entorno adecuadas para el desarrollo.
 
----
-
 ## Autor
 
 - **Juan Rosales** - [JARA-17](https://github.com/JARA-17)
