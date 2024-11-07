@@ -1,31 +1,89 @@
 # MoviesAppAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+¡Bienvenido a **MoviesAppAngular**! 🎬
 
-## Development server
+Este proyecto es una aplicación web construida con Angular, diseñada para ofrecer una experiencia fluida y atractiva al explorar películas. Fue generado utilizando [Angular CLI](https://github.com/angular/angular-cli) versión 18.0.1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Características
 
-## Code scaffolding
+- **Interfaz de usuario intuitiva**: Navega fácilmente a través de las películas.
+- **Componentes reutilizables**: Estructura modular que permite un desarrollo ágil.
+- **Pruebas integradas**: Asegura la calidad del código y la funcionalidad.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Servidor de desarrollo
 
-## Build
+Para iniciar el servidor de desarrollo, ejecuta:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng serve
+```
 
-## Running unit tests
+Luego, navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si realizas cambios en los archivos de origen.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Generación de código
 
-## Running end-to-end tests
+Para generar un nuevo componente, ejecuta:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng generate component nombre-del-componente
+```
 
-## Further help
+También puedes generar directivas, pipes, servicios, clases, guards, interfaces, enums y módulos utilizando:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
+
+## Construcción
+
+Para construir el proyecto, utiliza:
+
+```bash
+ng build
+```
+
+Los artefactos de construcción se almacenarán en el directorio `dist/`.
+
+## Ejecución de pruebas unitarias
+
+Para ejecutar las pruebas unitarias, utiliza:
+
+```bash
+ng test
+```
+
+Esto ejecutará las pruebas a través de [Karma](https://karma-runner.github.io).
+
+## Ejecución de pruebas de extremo a extremo
+
+Para ejecutar pruebas de extremo a extremo, utiliza:
+
+```bash
+ng e2e
+```
+
+Asegúrate de agregar primero un paquete que implemente capacidades de pruebas de extremo a extremo.
+
+## Ayuda adicional
+
+Para obtener más ayuda sobre Angular CLI, utiliza:
+
+```bash
+ng help
+```
+
+O visita la página de [Descripción general y referencia de comandos de Angular CLI](https://angular.dev/tools/cli).
 
 ## Variables de Entorno
 
-Usar las variables de entrono de desarrollo
+Asegúrate de utilizar las variables de entorno adecuadas para el desarrollo.
+
+---
+
+## Autor
+
+- **Juan Rosales** - [JARA-17](https://github.com/JARA-17)
+
+---
+
+¡Gracias por visitar **MoviesAppAngular**! Esperamos que disfrutes explorando y contribuyendo a este proyecto. 🚀
